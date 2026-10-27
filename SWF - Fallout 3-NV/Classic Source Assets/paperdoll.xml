@@ -1,0 +1,106 @@
+<!-- Paperdoll configuration (Vanilla Vault Boy)
+Provides metrics for the paperdoll on the Pip-Boy Stats and the HUD
+WRITTEN BY AXONIS FOR VANILLA UI PLUS; MODIFIED SEPTEMBER 2022
+
+For custom paperdolls, please install the Paperdoll Testbed from
+www.moddb.com/mods/vanilla-ui-plus/addons/paperdoll-testbed and
+follow its included PDF Readme. All of the following tags are meant
+to be reviewed, except for the last one -->
+
+<!-- Zoom and relative position of the head at the Pip-Boy -->
+
+<_paperdoll_pipboy_scale> 1.45 </_paperdoll_pipboy_scale>
+<_paperdoll_pipboy_x> 10 </_paperdoll_pipboy_x>
+<_paperdoll_pipboy_y> 50 </_paperdoll_pipboy_y>
+
+<!-- Alignment of the player name on the Pip-Boy in relation to the head -->
+
+<_paperdoll_pipboy_name_x> 0 </_paperdoll_pipboy_name_x>
+
+<!-- Zoom and relative position of the head at the HUD -->
+
+<_paperdoll_hud_scale> 0.75 </_paperdoll_hud_scale>
+<_paperdoll_hud_x> 0 </_paperdoll_hud_x>
+<_paperdoll_hud_y> 40 </_paperdoll_hud_y>
+
+<!-- Common metrics for both Pip-Boy and HUD
+
+I've tried to match my paperdoll calculations with the those used
+on the vanilla Pip-Boy Stats Menu (Menus\Main\stats_menu.xml).
+
+For width and height try to use the smallest possible values to
+allow precise hovering on the limbs at the Pip-Boy.
+ -->
+
+<_paperdoll_head_width> 85 </_paperdoll_head_width>
+<_paperdoll_head_height> 92 </_paperdoll_head_height>
+
+<!-- The position of the face is related (added) to the head -->
+<_paperdoll_face_width> 48 </_paperdoll_face_width>
+<_paperdoll_face_height> 64 </_paperdoll_face_height>
+<_paperdoll_face_x> 14.5 </_paperdoll_face_x>
+<_paperdoll_face_y> 16 </_paperdoll_face_y> <!-- the face is vertically aligned to the middle of the head -->
+
+<!-- The position of the torso is related (added) to the head -->
+
+<_paperdoll_torso_width> 102 </_paperdoll_torso_width>
+<_paperdoll_torso_height> 128 </_paperdoll_torso_height>
+<_paperdoll_torso_x> -14 </_paperdoll_torso_x>
+<_paperdoll_torso_y> 86 </_paperdoll_torso_y>
+
+<!-- The position of the limbs is related (added) to the torso -->
+
+<_paperdoll_leftarm_width> 100 </_paperdoll_leftarm_width>
+<_paperdoll_leftarm_height> 55 </_paperdoll_leftarm_height>
+<_paperdoll_leftarm_x> 90 </_paperdoll_leftarm_x>
+<_paperdoll_leftarm_y> 0.5 </_paperdoll_leftarm_y>
+
+<_paperdoll_rightarm_width> 96 </_paperdoll_rightarm_width>
+<_paperdoll_rightarm_height> 56 </_paperdoll_rightarm_height>
+<_paperdoll_rightarm_x> -88 </_paperdoll_rightarm_x>
+<_paperdoll_rightarm_y> -5 </_paperdoll_rightarm_y>
+
+<_paperdoll_leftleg_width> 72 </_paperdoll_leftleg_width>
+<_paperdoll_leftleg_height> 112 </_paperdoll_leftleg_height>
+<_paperdoll_leftleg_x> 47.5 </_paperdoll_leftleg_x>
+<_paperdoll_leftleg_y> 86 </_paperdoll_leftleg_y>
+
+<_paperdoll_rightleg_width> 84 </_paperdoll_rightleg_width>
+<_paperdoll_rightleg_height> 112 </_paperdoll_rightleg_height>
+<_paperdoll_rightleg_x> -36.5 </_paperdoll_rightleg_x>
+<_paperdoll_rightleg_y> 82.5 </_paperdoll_rightleg_y>
+
+<!-- The position of meters are related (added) to the head -->
+
+<_paperdoll_head_meter_x> 45 </_paperdoll_head_meter_x>
+<_paperdoll_head_meter_y> -9 </_paperdoll_head_meter_y>
+<_paperdoll_head_meter_dir> &center; </_paperdoll_head_meter_dir>
+
+<_paperdoll_torso_meter_x> 37 </_paperdoll_torso_meter_x>
+<_paperdoll_torso_meter_y> 120 </_paperdoll_torso_meter_y>
+<_paperdoll_torso_meter_dir> &center; </_paperdoll_torso_meter_dir>
+
+<_paperdoll_leftarm_meter_x> 150 </_paperdoll_leftarm_meter_x>
+<_paperdoll_leftarm_meter_y> 78 </_paperdoll_leftarm_meter_y>
+<_paperdoll_leftarm_meter_dir> &center; </_paperdoll_leftarm_meter_dir>
+
+<_paperdoll_rightarm_meter_x> -70 </_paperdoll_rightarm_meter_x>
+<_paperdoll_rightarm_meter_y> 74 </_paperdoll_rightarm_meter_y>
+<_paperdoll_rightarm_meter_dir> &center; </_paperdoll_rightarm_meter_dir>
+
+<_paperdoll_leftleg_meter_x> 100 </_paperdoll_leftleg_meter_x>
+<_paperdoll_leftleg_meter_y> 220 </_paperdoll_leftleg_meter_y>
+<_paperdoll_leftleg_meter_dir> &left; </_paperdoll_leftleg_meter_dir>
+
+<_paperdoll_rightleg_meter_x> -30 </_paperdoll_rightleg_meter_x>
+<_paperdoll_rightleg_meter_y> 220 </_paperdoll_rightleg_meter_y>
+<_paperdoll_rightleg_meter_dir> &right; </_paperdoll_rightleg_meter_dir>
+
+<!-- If you design custom icons for the top left notifications
+(eg. when quicksaving), it's better to include them as loose files on
+the "Textures\Interface\Icons\Message Icons" folder instead of drawing
+them on the interfaceshared atlas which may be used by HD HUD mods. -->
+<_paperdoll_loose_icons> 0 </_paperdoll_loose_icons>
+
+<!-- Automatic resizer for HD paperdolls (override only if HD scaling fails) -->
+<_paperdoll_HD_zoom> <copy src="globals" trait="_paperdoll_HD_zoom" /> </_paperdoll_HD_zoom>
