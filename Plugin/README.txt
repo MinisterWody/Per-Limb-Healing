@@ -36,6 +36,7 @@ Production comments document current invariants, ABI constraints, engine behavio
 
 Build
 Run build_plugin.cmd from an x64 environment with clang-cl and lld-link available.
+The script can be launched from any working directory and writes the canonical production DLL to Built\PerLimbHealing.dll while keeping compiler intermediates under build/.
 No Stimpak healing hot path performs settings-file or log-file I/O.
 
 Log lifecycle

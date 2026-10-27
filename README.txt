@@ -62,7 +62,7 @@ Run from the repository root or from Plugin/:
 
 The build script writes:
 
-    Plugin\build\PerLimbHealing.dll
+    Plugin\Built\PerLimbHealing.dll
 
 Address Library for F4SE Plugins is a runtime dependency of the installed mod.
 It is not a compile-time dependency.
