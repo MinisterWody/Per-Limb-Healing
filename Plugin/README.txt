@@ -17,8 +17,8 @@ Current runtime architecture
 - A runtime-family profile owns Address Library IDs plus only ABI layout/virtual-slot facts Address Library cannot provide.
 - Pre-980 1.10.x selects the OG candidate; 1.10.980+ selects NG; 1.11.x selects AE. Exact runtime validation status is informational and capability checks remain authoritative.
 - Canonical Fallout forms and ActorValueInfo records are resolved through Address-Library-backed TESForm::GetFormByNumericID rather than ActorValue/TESDataHandler structure traversal.
-- Supplied OG 1.10.163, NG 1.10.980/1.10.984 and AE 1.11.137/1.11.191/1.11.221/1.11.240 executable+Address-Library pairs are statically qualified; 1.11.221 is additionally gameplay-validated.
-- All three families use one PLH-relevant desktop EngineLayout backed by direct RTTI/vtable evidence, direct AE disassembly, direct recovered OG code evidence and the bundled three-runtime source.
+- OG 1.10.163, NG 1.10.980/1.10.984 and AE 1.11.137/1.11.191/1.11.221/1.11.240 were statically qualified during development; 1.11.221 was additionally gameplay-validated.
+- All three families use one PLH-relevant desktop EngineLayout backed by direct RTTI/vtable evidence, direct AE disassembly, recovered OG code evidence and cross-runtime source analysis performed during development.
 - Address Library resolution records scan completion plus found/usable/required identity counts. Passive-gate, Stimpak and Scaleform address capabilities are evaluated separately rather than treating a completed database pass as universal success.
 - Stimpak target Actor, selected Health ActorValue, and condition scale are obtained through Address-Library-validated Bethesda virtual helpers rather than raw +0x98/+0xB0 reads.
 - Scaleform GFxMovieView/movieRoot/CreateFunction ABI reads are checked with VirtualQuery and Fallout-image/executable provenance before the indirect call.
