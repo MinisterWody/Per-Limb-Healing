@@ -92,7 +92,6 @@ Installer
 ---------
 
 The FOMOD provides one STATUS-layout selection:
-
     Fallout 4
     Fallout 3/NV
 
