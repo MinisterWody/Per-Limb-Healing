@@ -56,9 +56,13 @@ Library files, or Windows SDK import libraries in order to compile and link.
 The required Fallout 4 / F4SE ABI declarations are defined directly in the
 plugin source.
 
-Run from the repository root or from Plugin/:
+From the repository root, run:
 
     Plugin\build_plugin.cmd
+
+Or from inside Plugin/, run:
+
+    build_plugin.cmd
 
 The build script writes:
 
