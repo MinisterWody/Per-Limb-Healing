@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+  <moduleName>Per Limb Healing</moduleName>
+
+  <requiredInstallFiles>
+    <folder source="Core" destination="" priority="0" />
+  </requiredInstallFiles>
+
+  <installSteps order="Explicit">
+    <installStep name="Choose Pip-Boy STATUS layout">
+      <optionalFileGroups order="Explicit">
+        <group name="Choose Pip-Boy STATUS layout:" type="SelectExactlyOne">
+          <plugins order="Explicit">
+            <plugin name="Fallout 4">
+              <description />
+              <image path="fomod\images\Fallout 4.jpg" />
+              <files>
+                <folder source="Layouts\Fallout4" destination="" priority="0" />
+              </files>
+              <typeDescriptor>
+                <type name="Recommended" />
+              </typeDescriptor>
+            </plugin>
+
+            <plugin name="Fallout 3/NV">
+              <description />
+              <image path="fomod\images\Fallout 3-NV.jpg" />
+              <files>
+                <folder source="Layouts\Fallout3NV" destination="" priority="0" />
+              </files>
+              <typeDescriptor>
+                <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+          </plugins>
+        </group>
+      </optionalFileGroups>
+    </installStep>
+  </installSteps>
+</config>

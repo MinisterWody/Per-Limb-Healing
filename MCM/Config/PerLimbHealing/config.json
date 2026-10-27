@@ -1,0 +1,52 @@
+{
+  "modName": "PerLimbHealing",
+  "displayName": "Per Limb Healing",
+  "minMcmVersion": 1,
+  "content": [
+    {
+      "text": "Gameplay",
+      "type": "section"
+    },
+    {
+      "id": "bPassiveLimbRegeneration:Gameplay",
+      "text": "Passive Limb Regeneration",
+      "type": "switcher",
+      "help": "Off - Modded, suppresses passive limb regeneration for the player.\nOn - Vanilla, allows passive limb regeneration for the player.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      }
+    },
+    {
+      "id": "bOrdinaryStimpaksHealLimbs:Gameplay",
+      "text": "Stimpaks Heal Limbs",
+      "type": "switcher",
+      "help": "Off - Modded, ordinary Stimpaks only heal player HP.\nOn - Vanilla, ordinary Stimpaks heal player HP and limb HP.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      }
+    },
+    {
+      "text": "Diagnostics",
+      "type": "section"
+    },
+    {
+      "id": "iDebugLog:Diagnostics",
+      "text": "Debug Log",
+      "type": "stepper",
+      "help": "Off - Records no PLH diagnostics.\nErrors - Records a compact startup/capability summary plus failures and abnormal states.\nVerbose - Records the Errors-level summary plus normal lifecycle/state diagnostics and every MCM setting change.",
+      "valueOptions": {
+        "options": ["Off", "Errors", "Verbose"],
+        "sourceType": "ModSettingInt"
+      }
+    },
+    {
+      "id": "bPerformanceLog:Diagnostics",
+      "text": "Performance Log",
+      "type": "switcher",
+      "help": "Off - Disables performance logging.\nOn - Enables performance logging.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      }
+    }
+  ]
+}
