@@ -1,0 +1,27 @@
+# Native plugin intermediates
+Plugin/build/
+
+# SWF compiler intermediates / reports
+SWF - Fallout 4/Built/Pipboy_StatsPage-source-code-only.swf
+SWF - Fallout 4/Built/source-compiler-command.json
+SWF - Fallout 4/Built/source-compiler.log
+SWF - Fallout 4/Built/source-verification.json
+SWF - Fallout 3-NV/Built/Pipboy_StatsPage-source-code-only.swf
+SWF - Fallout 3-NV/Built/source-compiler-command.json
+SWF - Fallout 3-NV/Built/source-compiler.log
+SWF - Fallout 3-NV/Built/source-verification.json
+
+# Local external SWF toolchains
+SWF - Fallout 4/tools/
+SWF - Fallout 3-NV/tools/
+
+# Generated release archive
+Per Limb Healing* FOMOD.zip
+
+# Python/editor noise
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
